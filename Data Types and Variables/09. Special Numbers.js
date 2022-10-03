@@ -1,22 +1,14 @@
 function specialNumbers(number) {
   for (let i = 1; i <= number; i++) {
-    let isTrue = false;
-    let currentNumber = i;
-    if (currentNumber % 5 == 0) {
-      isTrue = true;
-      console.log(`${currentNumber} -> True`);
+    let sum = 0;
+    let currentNumber = i.toString();
+    for (let k = 0; k < currentNumber.length; k++) {
+      sum += Number(currentNumber[k]);
     }
-    if (currentNumber % 7 == 0) {
-      isTrue = true;
-      console.log(`${currentNumber} -> True`);
-    }
-    if (currentNumber % 11 == 0) {
-      isTrue = true;
-      console.log(`${currentNumber} -> True`);
-    }
-    if (isTrue == false) {
-      console.log(`${currentNumber} -> False`);
-    }
+    if (sum === 5 || sum === 7 || sum === 11) {
+      console.log(`${i} -> True`);
+    } else console.log(`${i} -> False`);
+    sum = 0;
   }
 }
 specialNumbers(15);
