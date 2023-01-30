@@ -1,2 +1,2 @@
 # Programming-Fundamentals-JavaScript---Sept-2022
-Tasks from Programming Fundamentals with JavaScript
+Learning fundamentals about programming with javaScript.
