@@ -1,0 +1,49 @@
+body {
+  background: #f0f1f5;
+  margin: 0;
+  font-family: "Helvetica", sans-serif;
+  padding: 10px 15px;
+}
+nav ul li {
+  display: inline;
+  text-decoration: none;
+  color: orange;
+  float: right;
+  padding: 0px 10px;
+}
+
+.icon {
+  color: orange;
+  float: left;
+  padding: 0px 23px;
+  margin: 0px;
+  vertical-align: middle;
+}
+
+.image {
+  color: white;
+  margin-top: 4rem;
+  margin: 66px -17px;
+  padding: 19rem 446px;
+  background-size: cover;
+  background-position: center;
+  display: block; 
+  background-image: url(../Requirements-and-Resources/Images/picture.jpg);
+}
+
+image.h1 {
+  text-align: center;
+}
+
+.image span {
+  color: orange;
+}
+.image button {
+  background-color: orange;
+  color: white;
+  border: none;
+  font-size: 26px;
+  font-weight: bold;
+  padding: 12px;
+}
+
