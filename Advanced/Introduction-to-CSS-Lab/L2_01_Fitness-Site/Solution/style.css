@@ -7,13 +7,13 @@ body {
 nav ul li {
   display: inline;
   text-decoration: none;
-  color: orange;
+  color: #ec6800;
   float: right;
   padding: 0px 10px;
 }
 
 .icon {
-  color: orange;
+  color: #ec6800;
   float: left;
   padding: 0px 23px;
   margin: 0px;
@@ -21,29 +21,52 @@ nav ul li {
 }
 
 .image {
+  text-align: center;
   color: white;
-  margin-top: 4rem;
-  margin: 66px -17px;
-  padding: 19rem 446px;
+  margin-top: 3rem;
+  padding: 13rem;
+  background-position: -2px -41px;
   background-size: cover;
-  background-position: center;
-  display: block; 
+  display: block;
   background-image: url(../Requirements-and-Resources/Images/picture.jpg);
+  font-size: 31px;
 }
 
 image.h1 {
   text-align: center;
+  font-size: 41px;
 }
 
 .image span {
-  color: orange;
+  color: #ec6800;
 }
 .image button {
-  background-color: orange;
+  background-color: #ec6800;
   color: white;
   border: none;
   font-size: 26px;
   font-weight: bold;
   padding: 12px;
+  margin: 0px 376px;
 }
+
+.aboutus article {
+  background-color: rgb(236, 104, 0);
+  color: white;
+  width: 29%;
+  display: inline-block;
+  padding: 65px 39px;
+  text-align: center;
+}
+
+footer :nth-child(1){
+  text-align: left;
+}
+
+footer :nth-child(2){
+  text-align: right;
+  
+}
+
+
 
