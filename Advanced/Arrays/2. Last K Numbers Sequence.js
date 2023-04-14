@@ -1,0 +1,3 @@
+function seq(n,k) {
+    
+}
