@@ -7,4 +7,5 @@ if (varno) {
   console.log("da");
 } else {
   console.log("ne");
+  console.log('da');
 }
