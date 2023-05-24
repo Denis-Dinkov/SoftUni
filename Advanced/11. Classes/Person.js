@@ -11,6 +11,9 @@ class Person {
   }
 }
 
+let res = [];
 let person = new Person("Anna", "Simpson", 22, "anna@yahoo.com");
-
-console.log(person.toString());
+res.push(person.toString());
+let person2 = new Person("Gabriel", "Peterson", 24, "g.p@gmail.com");
+res.push(person.toString());
+console.log(res);
