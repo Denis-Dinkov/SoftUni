@@ -1,5 +1,5 @@
 function attachEvents() {
-    console.log('TODO...');
+    const url = 'http://localhost:3030/jsonstore/phonebook'
 }
 
 attachEvents();
