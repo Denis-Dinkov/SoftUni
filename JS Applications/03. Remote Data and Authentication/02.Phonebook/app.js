@@ -46,15 +46,22 @@ function attachEvents() {
   }
 
   async function addPhoneAddress() {
-    if(personNameInput.value === '' | phoneNumberInput.value === ''){
-        alert('Invalid input');
+    if (
+      personNameInput.value === "" ||
+      phoneNumberInput.value === ""  
+    ) {
+      return alert("Invalid input");
     }
 
-    const res = await fetch(url,{
-        method: 'POST',
-        headers: {'Content-Type': ' application/json'},
+    const res = await fetch(url, {
+      method: "POST",
+      headers: { "Content-Type": " application/json" },
+      body: JSON.stringify({
+        person: personNameInput.value,
+        phone: phoneNumberInput.value,
+      }),
     });
-
+    loadBtn.click()
   }
 }
 
