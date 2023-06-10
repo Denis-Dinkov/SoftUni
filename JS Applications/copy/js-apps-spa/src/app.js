@@ -6,7 +6,7 @@ const guestNavigation = document.querySelector("#guest");
 const userNavigation = document.querySelector('#user')
 guestNavigation.style.display = "inline";
 userNavigation.style.display = 'inline'
-
+router('/')
 updateAuth()
 navigation.addEventListener("click", (e) => {
   e.preventDefault();
