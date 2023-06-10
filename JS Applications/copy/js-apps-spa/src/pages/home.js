@@ -1,6 +1,8 @@
 const home = document.querySelector('.home');
 const url = 'http://localhost:3030/data/recipes'
 const recipeList = home.querySelector('.recipe-list')
+
+
 export function generateHome() {
   home.style.display = 'block'
   fetch(url)
