@@ -13,18 +13,16 @@ export function updateAuth() {
   }
 }
 
-
-
 export function logOut() {
-  localStorage.removeItem('user');
+  localStorage.removeItem("user");
   updateAuth();
 }
 
 export function getToken() {
-  let serializedToken = localStorage.getItem('user');
-  if(serializedToken){
+  let serializedToken = localStorage.getItem("user");
+  if (serializedToken) {
     let user = JSON.parse(serializedToken);
-    
+
     return user.accessToken;
   }
 }
