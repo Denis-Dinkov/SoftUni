@@ -10,7 +10,7 @@ class Book extends Component {
         <h2>Our book colection</h2>
         {this.props.books.map(x => {
          return (
-            <p>Title {x.title} Authr {x.director}</p>
+            <p>Title {x.title} Author {x.director}</p>
          )
         })}
     </div>;
