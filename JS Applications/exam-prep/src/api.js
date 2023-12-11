@@ -1,4 +1,6 @@
-const baseUrl = "https://api.github.com";
+import {userHelper} from "./userHelper.js";
+
+const baseUrl = "http://localhost:3030/";
 
 async function requester(url, method, data) {
   const option = {
@@ -31,6 +33,29 @@ async function requester(url, method, data) {
 
     return response.json();
   } catch (error) {
-    throw new error;
+    throw new Error(error.message);
   }
 }
+
+async function get(url) {
+  return await requester(url, "GET");
+}
+
+async function post(url, data) {
+  return await requester(url, "POST", data);
+}
+
+async function put(url, data) {
+  return await requester(url, "PUT", data);
+}
+
+async function del(url) {
+  return await requester(url, "DELETE");
+}
+
+export const api = {
+  get,
+  post,
+  put,
+  del,
+};

@@ -1,6 +1,6 @@
 import { render } from "./node_modules/lit-html/lit-html.js";
-// import { userService } from "./src/userService.js";
-// import { userHelper } from "./src/userHelper.js";
+import { userService } from "./src/userService.js";
+import { userHelper } from "./src/userHelper.js";
 import page from "./node_modules/page/page.mjs";
 
 import { showHome } from "./views/home.js";
@@ -26,7 +26,7 @@ page("/search", showSearch);
 page("/add", showAdd);
 page("/login", showLogin);
 page("/register", showRegister);
-page("/logout", showLogout);
+page("/logout", logout);
 page("/details/:id", showDetails);
 page("/edit/:id", showEdit);
 

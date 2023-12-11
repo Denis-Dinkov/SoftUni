@@ -2,18 +2,19 @@ import { api } from "./api.js";
 import { userHelper } from "./userHelper.js";
 
 const userEndpoints = {
-  login: "/users/login",
-  register: "/users/register",
-  logout: "/users/logout",
+  login: "users/login",
+  register: "users/register",
+  logout: "users/logout",
 };
 
-async function register() {
-  const data = await api.post(userEndpoints.register, this.params);
+async function register(email, password) {
+  console.log(email, password)
+  const data = await api.post(userEndpoints.register, { email, password });
   userHelper.setUserData(data);
 }
 
-async function login() {
-  const data = await api.post(userEndpoints.login, this.params);
+async function login(email, password) {
+  const data = await api.post(userEndpoints.login, { email, password });
   userHelper.setUserData(data);
 }
 
