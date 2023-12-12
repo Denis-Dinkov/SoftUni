@@ -16,8 +16,8 @@ const detailsTemplate = (item, isOwner) => html`
           </p>
         </div>
         ${isOwner ? html`<div id="action-buttons">
-          <a href="" id="edit-btn">Edit</a>
-          <a href="" id="delete-btn">Delete</a>
+          <a href="/edit/${item._id}" id="edit-btn">Edit</a>
+          <a href="/delete/${item._id}" id="delete-btn">Delete</a>
         </div>`: ''}
         
       </div>
@@ -28,6 +28,7 @@ const detailsTemplate = (item, isOwner) => html`
 export async function showDetails(ctx) {
   const id = ctx.params.id;
   const data = await dataService.getOne(id);
-  const isOwner = data._ownerId === localStorage.getItem("userId");
+  const isOwner = data._ownerId ===  );
+  console.log(localStorage.getItem("userId"));
   ctx.render(detailsTemplate(data, isOwner));
 }
