@@ -8,7 +8,6 @@ const userEndpoints = {
 };
 
 async function register(email, password) {
-  console.log(email, password)
   const data = await api.post(userEndpoints.register, { email, password });
   userHelper.setUserData(data);
 }

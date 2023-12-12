@@ -9,7 +9,6 @@ import { showSearch } from "./views/search.js";
 import { showAdd } from "./views/add.js";
 import { showLogin } from "./views/login.js";
 import { showRegister } from "./views/register.js";
-import { showLogout } from "./views/logout.js";
 import { showDetails } from "./views/details.js";
 import { showEdit } from "./views/edit.js";
 
